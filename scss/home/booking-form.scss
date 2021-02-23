@@ -1,0 +1,340 @@
+.booking-form {
+  width: 1280px;
+  height: 890px;
+  margin: 0 auto;
+  // display: flex;
+  // justify-content: space-around;
+
+  h1 {
+    width: 1280px;
+    // margin-left: 202px;
+    padding-left: 202px;
+    margin-top: 50px;
+    height: 50px;
+    font-family: ProximaNova;
+    font-size: 40px;
+  }
+
+  // ===============INFO FIELDS=====================//
+
+  .info-fields {
+    width: 1280px;
+    height: 140px;
+    display: flex;
+
+    .field-one-container {
+      width: 375px;
+      height: 140px;
+      margin-left: 202px;
+
+      input {
+        width: 360px;
+        height: 50px;
+        border: solid $blue 1px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .field-two-container {
+      width: 500px;
+      height: 140px;
+
+      #field-two {
+        width: 500px;
+        height: 50px;
+        border: solid $blue 1px;
+        margin-bottom: 15px;
+      }
+
+      #field-four {
+        width: 500px;
+        height: 50px;
+        border: solid $blue 1px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  //===================CHECK-IN FIELDS==============//
+  .checkin-fields {
+    width: 1280px;
+    height: 140px;
+    margin-top: 25px;
+    display: flex;
+
+    .text-one {
+      width: 150px;
+      height: 140px;
+      margin-left: 202px;
+
+      .check-in {
+        height: 60px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        opacity: 0.6;
+        font-size: 18px;
+        color: $black;
+        margin-top: 15px;
+      }
+
+      .check-out {
+        height: 60px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        opacity: 0.6;
+        font-size: 18px;
+        color: $black;
+        // margin-top: 10px;
+      }
+    }
+
+    // ========date fields================//
+
+    .dates {
+      width: 725px;
+      height: 140px;
+
+      #field-five {
+        width: 725px;
+        height: 50px;
+        border: solid $blue 1px;
+        margin-bottom: 15px;
+
+        // img {
+        //   height: 20px;
+        //   width: 20px;
+        //   background-image: url(../assets/icons/calendar.png);
+        //   background-position: center;
+        //   background-size: cover;
+        //   background-repeat: no-repeat;
+        // }
+      }
+
+      #field-six {
+        width: 725px;
+        height: 50px;
+        border: solid $blue 1px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  // ================PEOPLE FIELDS================//
+
+  .people-fields {
+    width: 1280px;
+    height: 60px;
+    margin-top: 25px;
+    display: flex;
+    margin-top: 25px;
+    padding-left: 135px;
+    padding-right: 135px;
+    justify-content: space-around;
+
+    // ============ADULT CONTAINER==============//
+
+    .adult-container {
+      width: 200px;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+
+      .adult-text {
+        width: 150px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        opacity: 0.6;
+        margin-top: 10px;
+      }
+
+      .adult-field {
+        width: 105px;
+        height: 40px;
+        border: solid $blue 1px;
+      }
+    }
+
+    // =============CHILDREN CONTAINER==========//
+
+    .children-container {
+      width: 200px;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+
+      .children-text {
+        width: 150px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        opacity: 0.6;
+        margin-top: 10px;
+      }
+
+      .children-field {
+        width: 105px;
+        height: 40px;
+        border: solid $blue 1px;
+      }
+    }
+
+    // ============ROOMS CONTAINER==============//
+
+    .rooms-container {
+      width: 200px;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+
+      .rooms-text {
+        width: 150px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        opacity: 0.6;
+        margin-top: 10px;
+      }
+
+      .rooms-field {
+        width: 105px;
+        height: 40px;
+        border: solid $blue 1px;
+      }
+    }
+  }
+  // =============MESSAGE FIELD======================//
+
+  .message-container {
+    width: 1280px;
+    height: 200px;
+    margin-top: 25px;
+
+    .message-field {
+      width: 875px;
+      height: 200px;
+      // margin-left: 202px;
+      margin: 0 auto;
+      border: solid $blue 1px;
+    }
+  }
+  // =============SUBMIT-BUTTON====================//
+
+  .submit-button-container {
+    width: 1280px;
+    height: 60px;
+    margin-top: 35px;
+
+    .submit-button {
+      width: 875px;
+      height: 60px;
+      margin: 0 auto;
+      background-color: $blue;
+      border-radius: 30px;
+    }
+
+    p {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 20px;
+      color: $white;
+      height: 20px;
+      width: 30px;
+      text-align: center;
+      padding-top: 15px;
+      margin: 0 auto;
+    }
+  }
+}
+
+//   // ===========FIRST FOUR FIELDS=============//
+
+//   .field-container {
+//     width: 875px;
+//     height: 680px;
+//     margin: 0 auto;
+
+//     .contact-one {
+//       width: 875 px;
+//       height: 60px;
+//       margin: 0 auto;
+//       display: flex;
+//       justify-content: space-between;
+
+//       input {
+//         border: solid 1px $blue;
+//       }
+
+//       #field-one {
+//         width: 360px;
+//         height: 58px;
+//       }
+
+//       #field-two {
+//         width: 500px;
+//         height: 58px;
+//         padding-left: 25px;
+//       }
+//     }
+
+//     .contact-two {
+//       width: 875 px;
+//       height: 60px;
+//       margin: 0 auto;
+//       display: flex;
+//       justify-content: space-between;
+//       padding-top: 15px;
+
+//       input {
+//         border: solid 1px $blue;
+//       }
+
+//       #field-three {
+//         width: 360px;
+//         height: 58px;
+//       }
+
+//       #field-four {
+//         width: 500px;
+//         height: 58px;
+//       }
+//     }
+//   }
+//   // ==============CHECK-IN FIELDS=================//
+
+//   .check-in {
+//     width: 875px;
+//     height: 136px;
+//     margin: 0 auto;
+//     background-color: teal;
+//     // display: flex;
+//     // justify-content: space-between;
+//     // margin-top; 50px;
+//       // width: 100px;
+//       // height: 58px;
+
+//       .text-container {
+//         width: 100px;
+//         height: 136px;
+//         background-color: pink;
+
+//       p {
+//         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+//         font-size: 18px;
+//       }
+//     }
+
+//     .input-container {
+// width: 700px;
+// height: 136px;
+//     }
+
+//     input {
+//       border: solid 1px $blue;
+//     }
+
+//     #field-four {
+//       width: 700px;
+//       height: 58px;
+//     }
+
+//     #field-five {
+//       width: 700px;
+//       height: 58px;
+//     }
+//   }

@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(fonts/Proxima-Nova-Thinone.otf);
+}
+.hero {
+  width: 1280px;
+  height: 500px;
+  padding-top: 20px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/hero.jpg);
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo-tours {
+  width: 1280px;
+  height: 304px;
+  margin: -50px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+.promo-tours .promos {
+  height: 304px;
+  width: 236px;
+}
+.promo-tours .promos .promo-one {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/tour/tour-01.jpg);
+  height: 304px;
+  width: 236px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  font-family: ProximaNova;
+  font-size: 28px;
+  color: #ffffff;
+  text-align: center;
+}
+.promo-tours .promos h1 {
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.promo-tours .promos h2 {
+  font-family: ProximaNova;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+.promo-tours .promos .learnmore-button {
+  width: 133px;
+  height: 40px;
+  background-color: #79addc;
+  z-index: 99;
+  border-radius: 20px;
+  margin: auto;
+}
+.promo-tours .promos .learnmore-button p {
+  font-size: 10px;
+  margin: 0 auto;
+  width: 90px;
+  height: 17px;
+  font-size: 15px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15px;
+}
+.promo-tours .promos .promo-two {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/tour/tour-02.jpg);
+  height: 304px;
+  width: 236px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  font-family: ProximaNova;
+  font-size: 28px;
+  color: #ffffff;
+  text-align: center;
+}
+.promo-tours .promos .promo-three {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/tour/tour-03.jpg);
+  height: 304px;
+  width: 236px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  font-family: ProximaNova;
+  font-size: 28px;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer {
+  width: 1280px;
+  height: 100px;
+  background-color: #79addc;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .icon {
+  width: 92px;
+  height: 42px;
+  margin-left: 150px;
+  background-image: url(../assets/icons/logo-white.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .copywright {
+  width: 216px;
+  height: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+}
+footer .socials {
+  width: 121px;
+  height: 23px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .socials .facebook {
+  height: 23px;
+  width: 23px;
+  background-image: url(../assets/icons/facebook@2x.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .socials .instagram {
+  height: 23px;
+  width: 23px;
+  background-image: url(../assets/icons/instagram@2x.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .socials .twitter {
+  height: 23px;
+  width: 23px;
+  background-image: url(../assets/icons/twitter@2x.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.booking-form {
+  width: 1280px;
+  height: 890px;
+  margin: 0 auto;
+}
+.booking-form h1 {
+  width: 1280px;
+  padding-left: 202px;
+  margin-top: 50px;
+  height: 50px;
+  font-family: ProximaNova;
+  font-size: 40px;
+}
+.booking-form .info-fields {
+  width: 1280px;
+  height: 140px;
+  display: flex;
+}
+.booking-form .info-fields .field-one-container {
+  width: 375px;
+  height: 140px;
+  margin-left: 202px;
+}
+.booking-form .info-fields .field-one-container input {
+  width: 360px;
+  height: 50px;
+  border: solid #79addc 1px;
+  margin-bottom: 15px;
+}
+.booking-form .info-fields .field-two-container {
+  width: 500px;
+  height: 140px;
+}
+.booking-form .info-fields .field-two-container #field-two {
+  width: 500px;
+  height: 50px;
+  border: solid #79addc 1px;
+  margin-bottom: 15px;
+}
+.booking-form .info-fields .field-two-container #field-four {
+  width: 500px;
+  height: 50px;
+  border: solid #79addc 1px;
+  margin-bottom: 15px;
+}
+.booking-form .checkin-fields {
+  width: 1280px;
+  height: 140px;
+  margin-top: 25px;
+  display: flex;
+}
+.booking-form .checkin-fields .text-one {
+  width: 150px;
+  height: 140px;
+  margin-left: 202px;
+}
+.booking-form .checkin-fields .text-one .check-in {
+  height: 60px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  opacity: 0.6;
+  font-size: 18px;
+  color: black;
+  margin-top: 15px;
+}
+.booking-form .checkin-fields .text-one .check-out {
+  height: 60px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  opacity: 0.6;
+  font-size: 18px;
+  color: black;
+}
+.booking-form .checkin-fields .dates {
+  width: 725px;
+  height: 140px;
+}
+.booking-form .checkin-fields .dates #field-five {
+  width: 725px;
+  height: 50px;
+  border: solid #79addc 1px;
+  margin-bottom: 15px;
+}
+.booking-form .checkin-fields .dates #field-six {
+  width: 725px;
+  height: 50px;
+  border: solid #79addc 1px;
+  margin-bottom: 15px;
+}
+.booking-form .people-fields {
+  width: 1280px;
+  height: 60px;
+  margin-top: 25px;
+  display: flex;
+  margin-top: 25px;
+  padding-left: 135px;
+  padding-right: 135px;
+  justify-content: space-around;
+}
+.booking-form .people-fields .adult-container {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .people-fields .adult-container .adult-text {
+  width: 150px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  opacity: 0.6;
+  margin-top: 10px;
+}
+.booking-form .people-fields .adult-container .adult-field {
+  width: 105px;
+  height: 40px;
+  border: solid #79addc 1px;
+}
+.booking-form .people-fields .children-container {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .people-fields .children-container .children-text {
+  width: 150px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  opacity: 0.6;
+  margin-top: 10px;
+}
+.booking-form .people-fields .children-container .children-field {
+  width: 105px;
+  height: 40px;
+  border: solid #79addc 1px;
+}
+.booking-form .people-fields .rooms-container {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .people-fields .rooms-container .rooms-text {
+  width: 150px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  opacity: 0.6;
+  margin-top: 10px;
+}
+.booking-form .people-fields .rooms-container .rooms-field {
+  width: 105px;
+  height: 40px;
+  border: solid #79addc 1px;
+}
+.booking-form .message-container {
+  width: 1280px;
+  height: 200px;
+  margin-top: 25px;
+}
+.booking-form .message-container .message-field {
+  width: 875px;
+  height: 200px;
+  margin: 0 auto;
+  border: solid #79addc 1px;
+}
+.booking-form .submit-button-container {
+  width: 1280px;
+  height: 60px;
+  margin-top: 35px;
+}
+.booking-form .submit-button-container .submit-button {
+  width: 875px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #79addc;
+  border-radius: 30px;
+}
+.booking-form .submit-button-container p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  height: 20px;
+  width: 30px;
+  text-align: center;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #ffffff solid 2px;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+  background-image: url(../assets/icons/logo-white.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav .links {
+  width: 525px;
+  height: 42px;
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+}
+nav .links a {
+  text-decoration: none;
+  color: #ffffff;
+  align-self: center;
+  margin: auto;
+  border-right: solid 1px #79addc;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav .links .contact {
+  border-right: none;
+}
+
+.hero-content {
+  width: 475px;
+  height: 285px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.hero-content h1 {
+  font-family: ProximaNova;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+}
+.hero-content p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.hero-content .readmore-button {
+  width: 122px;
+  height: 40px;
+  background-color: #79addc;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.hero-content .readmore-button p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  padding-top: 10px;
+}

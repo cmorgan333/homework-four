@@ -1,0 +1,40 @@
+.hero-content {
+  width: 475px;
+  height: 285px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  h1 {
+    font-family: ProximaNova;
+    font-size: 60px;
+    color: $white;
+    text-align: center;
+  }
+
+  p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 20px;
+    color: $white;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  .readmore-button {
+    width: 122px;
+    height: 40px;
+    background-color: $blue;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 25px;
+
+    p {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 15px;
+      color: $white;
+      padding-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+nav {
+  width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: $white solid 2px;
+
+  .logo {
+    width: 92px;
+    height: 42px;
+    background-image: url(../assets/icons/logo-white.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .links {
+    width: 525px;
+    height: 42px;
+    display: flex;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 15px;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      align-self: center;
+      margin: auto;
+      border-right: solid 1px $blue;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .contact {
+      border-right: none;
+    }
+  }
+}
