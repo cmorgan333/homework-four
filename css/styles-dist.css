@@ -176,6 +176,15 @@ footer .socials .twitter {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 1100px) {
+  .footer {
+    width: 375px;
+  }
+  .footer .socials {
+    width: 375px;
+    display: flex;
+  }
+}
 .booking-form {
   width: 1280px;
   height: 890px;
@@ -190,92 +199,117 @@ footer .socials .twitter {
   font-size: 40px;
 }
 .booking-form .info-fields {
-  width: 1280px;
-  height: 140px;
+  width: 875px;
+  min-height: 140px;
   display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 .booking-form .info-fields .field-one-container {
   width: 375px;
   height: 140px;
-  margin-left: 202px;
 }
 .booking-form .info-fields .field-one-container input {
   width: 360px;
   height: 50px;
   border: solid #79addc 1px;
   margin-bottom: 15px;
+  text-indent: 10px;
 }
 .booking-form .info-fields .field-two-container {
   width: 500px;
   height: 140px;
+}
+.booking-form .info-fields .field-two-container #field-three {
+  width: 500px;
+  min-height: 50px;
+  border: solid #79addc 1px;
+  margin-bottom: 15px;
+  text-indent: 10px;
+  margin-right: 200px;
 }
 .booking-form .info-fields .field-two-container #field-two {
   width: 500px;
   height: 50px;
   border: solid #79addc 1px;
   margin-bottom: 15px;
+  text-indent: 10px;
 }
 .booking-form .info-fields .field-two-container #field-four {
   width: 500px;
   height: 50px;
   border: solid #79addc 1px;
   margin-bottom: 15px;
+  text-indent: 10px;
 }
 .booking-form .checkin-fields {
-  width: 1280px;
+  max-width: 1280px;
   height: 140px;
   margin-top: 25px;
+}
+.booking-form .checkin-fields .check-in {
+  max-width: 875px;
+  height: 60px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
+  margin: 0 auto;
 }
-.booking-form .checkin-fields .text-one {
+.booking-form .checkin-fields .check-in .text-one {
   width: 150px;
-  height: 140px;
-  margin-left: 202px;
-}
-.booking-form .checkin-fields .text-one .check-in {
   height: 60px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   opacity: 0.6;
   font-size: 18px;
   color: black;
-  margin-top: 15px;
+  padding-top: 15px;
 }
-.booking-form .checkin-fields .text-one .check-out {
+.booking-form .checkin-fields .check-in #field-five {
+  width: 725px;
+  height: 60px;
+  border: solid #79addc 1px;
+  margin-bottom: 15px;
+  text-indent: 10px;
+}
+.booking-form .checkin-fields .check-in #field-five input {
+  text-indent: 10px;
+}
+.booking-form .checkin-fields .check-out {
+  max-width: 875px;
+  height: 60px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  margin: 0 auto;
+}
+.booking-form .checkin-fields .check-out .text-two {
+  width: 150px;
   height: 60px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   opacity: 0.6;
   font-size: 18px;
   color: black;
+  padding-top: 20px;
+  margin-top: 5px;
 }
-.booking-form .checkin-fields .dates {
+.booking-form .checkin-fields .check-out #field-six {
   width: 725px;
-  height: 140px;
-}
-.booking-form .checkin-fields .dates #field-five {
-  width: 725px;
-  height: 50px;
+  height: 60px;
   border: solid #79addc 1px;
   margin-bottom: 15px;
-}
-.booking-form .checkin-fields .dates #field-six {
-  width: 725px;
-  height: 50px;
-  border: solid #79addc 1px;
-  margin-bottom: 15px;
+  text-indent: 10px;
+  margin-top: 10px;
 }
 .booking-form .people-fields {
   width: 1280px;
   height: 60px;
   margin-top: 25px;
   display: flex;
-  margin-top: 25px;
   padding-left: 135px;
   padding-right: 135px;
   justify-content: space-around;
 }
 .booking-form .people-fields .adult-container {
   width: 200px;
-  height: 40px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
 }
@@ -325,15 +359,20 @@ footer .socials .twitter {
   border: solid #79addc 1px;
 }
 .booking-form .message-container {
-  width: 1280px;
+  max-width: 1280px;
   height: 200px;
   margin-top: 25px;
-}
-.booking-form .message-container .message-field {
-  width: 875px;
-  height: 200px;
   margin: 0 auto;
+  text-indent: 10px;
+}
+.booking-form .message-container input {
+  width: 875px;
+  min-height: 200px;
   border: solid #79addc 1px;
+  margin-left: 202px;
+}
+.booking-form .message-container input ::placeholder {
+  margin-left: 10px;
 }
 .booking-form .submit-button-container {
   width: 1280px;
