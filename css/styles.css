@@ -363,7 +363,6 @@ footer .socials .twitter {
   height: 200px;
   margin-top: 25px;
   margin: 0 auto;
-  text-indent: 10px;
 }
 .booking-form .message-container input {
   width: 875px;
@@ -375,9 +374,11 @@ footer .socials .twitter {
   margin-left: 10px;
 }
 .booking-form .submit-button-container {
-  width: 1280px;
+  max-width: 1280px;
   height: 60px;
-  margin-top: 35px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  align-items: center;
 }
 .booking-form .submit-button-container .submit-button {
   width: 875px;
@@ -397,6 +398,108 @@ footer .socials .twitter {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1100px) {
+  .booking-form {
+    width: 375px;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  .booking-form h1 {
+    padding-left: 0;
+  }
+  .booking-form .info-fields {
+    width: 375px;
+    min-height: 140px;
+    display: block;
+  }
+  .booking-form .field-one-container {
+    width: 375px;
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+  }
+  .booking-form .field-one-container #field-one {
+    width: 375px;
+  }
+  .booking-form .field-one-container #field-two {
+    width: 375px;
+  }
+  .booking-form .field-two-container {
+    width: 375px;
+    height: 140px;
+    display: block;
+  }
+  .booking-form .field-two-container #field-three {
+    max-width: 375px;
+    height: 50px;
+  }
+  .booking-form .field-two-container #field-four {
+    max-width: 375px;
+    height: 50px;
+  }
+
+  .checkin-fields {
+    width: 375px;
+    display: block;
+    margin-left: 0;
+  }
+  .checkin-fields .check-in {
+    width: 375px;
+  }
+  .checkin-fields .text-one {
+    width: 100px;
+    font-size: 10px;
+  }
+  .checkin-fields #field-five {
+    width: 275px;
+  }
+
+  .check-out {
+    width: 375px;
+  }
+
+  .text-two {
+    width: 100px;
+    font-size: 10px;
+  }
+
+  #field-six {
+    width: 275px;
+  }
+
+  .people-fields {
+    width: 375px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .message-container {
+    width: 350px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .submit-button-container {
+    width: 375px;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+  }
+  .submit-button-container .submit-button {
+    width: 375px;
+  }
+}
 nav {
   width: 980px;
   height: 60px;
