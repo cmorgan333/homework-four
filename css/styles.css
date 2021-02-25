@@ -28,7 +28,7 @@ p {
   src: url(fonts/Proxima-Nova-Thinone.otf);
 }
 .hero {
-  width: 1280px;
+  max-width: 1280px;
   height: 500px;
   padding-top: 20px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/hero.jpg);
@@ -40,7 +40,7 @@ p {
 
 .promo-tours {
   width: 1280px;
-  height: 304px;
+  min-height: 304px;
   margin: -50px auto 0 auto;
   display: flex;
   justify-content: space-around;
@@ -119,6 +119,18 @@ p {
   text-align: center;
 }
 
+@media only screen and (max-width: 1060px) {
+  .promo-tours {
+    width: 236px;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+  }
+  .promo-tours .promos {
+    margin-bottom: 30px;
+  }
+}
 footer {
   width: 1280px;
   height: 100px;
@@ -187,7 +199,7 @@ footer .socials .twitter {
 }
 .booking-form {
   width: 1280px;
-  height: 890px;
+  min-height: 890px;
   margin: 0 auto;
 }
 .booking-form h1 {
@@ -300,7 +312,7 @@ footer .socials .twitter {
 }
 .booking-form .people-fields {
   width: 1280px;
-  height: 60px;
+  min-height: 60px;
   margin-top: 25px;
   display: flex;
   padding-left: 135px;
@@ -360,9 +372,10 @@ footer .socials .twitter {
 }
 .booking-form .message-container {
   max-width: 1280px;
-  height: 200px;
+  min-height: 200px;
   margin-top: 25px;
   margin: 0 auto;
+  display: block;
 }
 .booking-form .message-container input {
   width: 875px;
@@ -378,6 +391,7 @@ footer .socials .twitter {
   height: 60px;
   margin: 0 auto;
   margin-bottom: 35px;
+  padding-top: 35px;
   align-items: center;
 }
 .booking-form .submit-button-container .submit-button {
@@ -386,6 +400,12 @@ footer .socials .twitter {
   margin: 0 auto;
   background-color: #79addc;
   border-radius: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 15px;
+  margin: 0 auto;
 }
 .booking-form .submit-button-container p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -501,7 +521,7 @@ footer .socials .twitter {
   }
 }
 nav {
-  width: 980px;
+  max-width: 980px;
   height: 60px;
   margin: 0 auto;
   display: flex;

@@ -1,6 +1,6 @@
 .promo-tours {
   width: 1280px;
-  height: 304px;
+  min-height: 304px;
   margin: -50px auto 0 auto;
   display: flex;
   justify-content: space-around;
@@ -94,6 +94,20 @@
       font-size: 28px;
       color: $white;
       text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .promo-tours {
+    width: 236px;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+
+    .promos {
+      margin-bottom: 30px;
     }
   }
 }

@@ -1,6 +1,6 @@
 .booking-form {
   width: 1280px;
-  height: 890px;
+  min-height: 890px;
   margin: 0 auto;
   // display: flex;
   // justify-content: space-around;
@@ -151,7 +151,7 @@
 
   .people-fields {
     width: 1280px;
-    height: 60px;
+    min-height: 60px;
     margin-top: 25px;
     display: flex;
     padding-left: 135px;
@@ -231,9 +231,10 @@
 
   .message-container {
     max-width: 1280px;
-    height: 200px;
+    min-height: 200px;
     margin-top: 25px;
     margin: 0 auto;
+    display: block;
     // margin-bottom: 35px;
     // text-indent: 10px;
 
@@ -263,6 +264,7 @@
     height: 60px;
     margin: 0 auto;
     margin-bottom: 35px;
+    padding-top: 35px;
     // background-color: $blue;
     // border-radius: 30px;
     align-items: center;
@@ -273,6 +275,13 @@
       margin: 0 auto;
       background-color: $blue;
       border-radius: 30px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 20px;
+      color: $white;
+      text-align: center;
+      padding-top: 15px;
+      margin: 0 auto;
     }
 
     p {
