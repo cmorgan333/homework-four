@@ -150,151 +150,165 @@
   // ================PEOPLE FIELDS================//
 
   .people-fields {
-    width: 1280px;
-    min-height: 60px;
+    max-width: 1280px;
+    min-height: 300px;
     margin-top: 25px;
+    display: block;
+    // padding-left: 135px;
+    // padding-right: 135px;
+    // justify-content: space-around;
+    margin: 0 auto;
+    // margin: 0 auto;
+  }
+
+  // ============ADULT CONTAINER==============//
+
+  .selections {
     display: flex;
+    justify-content: space-around;
     padding-left: 135px;
     padding-right: 135px;
-    justify-content: space-around;
-
-    // ============ADULT CONTAINER==============//
-
-    .adult-container {
-      width: 200px;
-      height: 60px;
-      display: flex;
-      justify-content: space-between;
-
-      .adult-text {
-        width: 150px;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        opacity: 0.6;
-        margin-top: 10px;
-      }
-
-      .adult-field {
-        width: 105px;
-        height: 40px;
-        border: solid $blue 1px;
-      }
-    }
-
-    // =============CHILDREN CONTAINER==========//
-
-    .children-container {
-      width: 200px;
-      height: 60px;
-      display: flex;
-      justify-content: space-between;
-
-      .children-text {
-        width: 150px;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        opacity: 0.6;
-        margin-top: 10px;
-      }
-
-      .children-field {
-        width: 105px;
-        height: 40px;
-        border: solid $blue 1px;
-      }
-    }
-
-    // ============ROOMS CONTAINER==============//
-
-    .rooms-container {
-      width: 200px;
-      height: 60px;
-      display: flex;
-      justify-content: space-between;
-
-      .rooms-text {
-        width: 150px;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        opacity: 0.6;
-        margin-top: 10px;
-      }
-
-      .rooms-field {
-        width: 105px;
-        height: 40px;
-        border: solid $blue 1px;
-      }
-    }
   }
-  // =============MESSAGE FIELD======================//
 
-  .message-container {
-    max-width: 1280px;
-    min-height: 200px;
-    margin-top: 25px;
-    margin: 0 auto;
-    display: block;
-    // margin-bottom: 35px;
-    // text-indent: 10px;
-
-    // .message-field {
-    //   width: 875px;
-    //   height: 200px;
-    //   // margin-left: 202px;
-    //   margin: 0 auto;
-    //   border: solid $blue 1px;
-
-    input {
-      width: 875px;
-      min-height: 200px;
-      border: solid $blue 1px;
-      margin-left: 202px;
-      // padding-bottom: 35p;
-
-      ::placeholder {
-        margin-left: 10px;
-      }
-    }
-  }
-  // =============SUBMIT-BUTTON====================//
-
-  .submit-button-container {
-    max-width: 1280px;
+  .adult-container {
+    max-width: 200px;
     height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    .adult-text {
+      width: 150px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      opacity: 0.6;
+      margin-top: 10px;
+    }
+
+    .adult-field {
+      width: 105px;
+      height: 40px;
+      border: solid $blue 1px;
+    }
+  }
+
+  // =============CHILDREN CONTAINER==========//
+
+  .children-container {
+    max-width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    .children-text {
+      width: 150px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      opacity: 0.6;
+      margin-top: 10px;
+    }
+
+    .children-field {
+      width: 105px;
+      height: 40px;
+      border: solid $blue 1px;
+    }
+  }
+
+  // ============ROOMS CONTAINER==============//
+
+  .rooms-container {
+    max-width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    .rooms-text {
+      width: 150px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      opacity: 0.6;
+      margin-top: 10px;
+    }
+
+    .rooms-field {
+      width: 105px;
+      height: 40px;
+      border: solid $blue 1px;
+    }
+  }
+}
+// =============MESSAGE FIELD======================//
+
+// .message-container {
+//   max-width: 1280px;
+//   min-height: 220px;
+//   margin-top: 25px;
+//   margin: 0 auto;
+//   // display: block;
+//   // display: flex;
+//   background-color: yellow;
+//   // margin-bottom: 35px;
+//   // text-indent: 10px;
+
+#field-seven {
+  width: 875px;
+  height: 200px;
+  // margin-left: 202px;
+  margin-left: 202px;
+  border: solid $blue 1px;
+}
+
+// #message {
+//   width: 875px;
+//   height: 200px;
+//   border: solid $blue 1px;
+//   margin-left: 202px;
+//   background-color: teal;
+//   // margin-left: 202px;
+//   // padding-bottom: 35p;
+
+//   ::placeholder {
+//     margin-left: 10px;
+//   }
+// }
+
+// =============SUBMIT-BUTTON====================//
+
+.submit-button-container {
+  max-width: 1280px;
+  height: 60px;
+  min-margin: 0 auto;
+  margin-bottom: 35px;
+  padding-top: 35px;
+  // background-color: $blue;
+  // border-radius: 30px;
+  align-items: center;
+
+  .submit-button {
+    max-width: 875px;
+    min-height: 60px;
     margin: 0 auto;
-    margin-bottom: 35px;
-    padding-top: 35px;
-    // background-color: $blue;
-    // border-radius: 30px;
-    align-items: center;
+    background-color: $blue;
+    border-radius: 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 20px;
+    color: $white;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0 auto;
+  }
 
-    .submit-button {
-      width: 875px;
-      height: 60px;
-      margin: 0 auto;
-      background-color: $blue;
-      border-radius: 30px;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-      font-size: 20px;
-      color: $white;
-      text-align: center;
-      padding-top: 15px;
-      margin: 0 auto;
-    }
-
-    p {
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-      font-size: 20px;
-      color: $white;
-      height: 20px;
-      width: 30px;
-      text-align: center;
-      padding-top: 15px;
-      margin: 0 auto;
-    }
+  p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 20px;
+    color: $white;
+    height: 20px;
+    width: 30px;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0 auto;
   }
 }
 
@@ -387,7 +401,7 @@
 
   .people-fields {
     width: 375px;
-    height: 400px;
+    min-height: 400px;
     display: block;
     margin: 0 auto;
     flex-direction: column;
@@ -395,33 +409,46 @@
     padding-right: 0;
     align-items: center;
     margin-top: 0;
-  }
 
-  // ===========message responsiveness==========//@extend
+    .selections {
+      display: block;
+    }
 
-  .message-container {
-    width: 350px;
-    margin-left: 0;
-    display: flex;
-    justify-content: center;
+    // ===========message responsiveness==========//
 
-    // .input {
-    //   width: 350px;
+    // .message-container {
+    //   width: 375px;
+    //   // height: 220px;
+    //   // justify-content: center;
+    //   background-color: yellow;
+    //   // display: flex;
+    //   // align-items: left;
+
+    #field-seven {
+      width: 375px;
+      // padding-left: 10px;
+      margin: 0 auto;
+    }
+
+    // #message {
+    //   width: 375px;
+    //   background-color: teal;
     //   margin-left: 0;
     // }
-  }
 
-  // ============SUBMIT BUTTON RESPONSIVENESS=======//
+    // ============SUBMIT BUTTON RESPONSIVENESS=======//
 
-  .submit-button-container {
-    width: 375px;
-    display: block;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 100px;
-
-    .submit-button {
+    .submit-button-container {
       width: 375px;
+      display: block;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 100px;
+
+      .submit-button {
+        width: 375px;
+        padding-bottom: 30px;
+      }
     }
   }
 }
