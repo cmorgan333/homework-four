@@ -276,13 +276,13 @@
 
 .submit-button-container {
   max-width: 1280px;
-  height: 60px;
+  min-height: 60px;
   min-margin: 0 auto;
-  margin-bottom: 35px;
+  // margin-bottom: 35px;
   padding-top: 35px;
   // background-color: $blue;
   // border-radius: 30px;
-  align-items: center;
+  // align-items: center;
 
   .submit-button {
     max-width: 875px;
@@ -296,7 +296,8 @@
     color: $white;
     text-align: center;
     padding-top: 15px;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   p {
@@ -440,14 +441,17 @@
 
     .submit-button-container {
       width: 375px;
-      display: block;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      margin-bottom: 100px;
+      // display: block;
+      // padding-top: 30px;
+      // padding-bottom: 30px;
+      // margin-bottom: 100px;
+      background-color: yellow;
 
       .submit-button {
         width: 375px;
         padding-bottom: 30px;
+        margin-bottom: 100px;
+        background-color: purple;
       }
     }
   }
